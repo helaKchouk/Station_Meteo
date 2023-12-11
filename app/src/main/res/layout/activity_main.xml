@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_200">
+
+
+    <GridLayout
+        android:id="@+id/gridLayoutTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="Capteur"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="DHT11"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="DHT22"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="BMP280"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="Température"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/tempDHT11"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="#E91E63"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/tempDHT22"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="#E91E63"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/tempBMP"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="#E91E63"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayoutHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:layout_below="@id/gridLayoutTemperature"
+        android:layout_marginTop="20dp"
+      >
+
+        <TextView
+            android:text="Capteur"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="DHT11"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="DHT22"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="Humidité"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/humDHT11"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/humDHT22"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayoutPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:layout_below="@id/gridLayoutHumidity"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:text="Capteur"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="BMP280"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="Pression"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:id="@+id/pressureBMP"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+</RelativeLayout>
