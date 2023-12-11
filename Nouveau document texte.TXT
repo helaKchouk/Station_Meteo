@@ -1,0 +1,12 @@
+else if(ultrasonic1.read() < 10 && ultrasonic1.read()>5){
+  for (int i = 0; i < 3; i++) {
+  digitalWrite(pinoutput32, HIGH);
+  delay(1000);
+  digitalWrite(pinoutput32, LOW);
+  delay(1000);}
+}else if(ultrasonic1.read() < 5){
+  for (int i = 0; i < 3; i++) {
+  digitalWrite(pinoutput32, HIGH);
+  delay(500);
+  digitalWrite(pinoutput32, LOW);
+  delay(500);}}
